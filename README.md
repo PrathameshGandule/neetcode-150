@@ -8,7 +8,7 @@ My notes for neetcode 150 dsa sheet
 |20-01-2026|2|3|6|
 
 ### Activity graph
-```mmd
+```mermaid
 xychart-beta
     title "Progress"
     x-axis [1,2,3,4,5,6,7,9,10,11,12,13,14,15,16,17,18,19,20]
