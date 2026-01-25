@@ -10,15 +10,16 @@ My notes for neetcode 150 dsa sheet
 |22-01-2026|4|0|7|
 |23-01-2026|5|1|8|
 |24-01-2026|6|4|12|
+|25-01-2026|7|2|14|
 
 ### Activity graph
 ```mermaid
 xychart-beta
     title "Progress"
     x-axis [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    y-axis "No. of problems solved" 1 --> 15
-	bar [3, 6, 7, 7, 8, 12]
-    line [3, 6, 7, 7, 8, 12]
+    y-axis "No. of problems solved" 1 --> 20
+	bar [3, 6, 7, 7, 8, 12, 14]
+    line [3, 6, 7, 7, 8, 12, 14]
 ```
 
 
@@ -33,7 +34,7 @@ xychart-beta
 
 |Section|1|2|3|4|5|
 |-|-|-|-|-|-|
-|Two Pointers|[✅](./two-pointers/valid-palindrome.md)|[✅](./two-pointers/two-sum-II.md)|[✅](./two-pointers/3-sum.md)|_|_|
+|[Two Pointers](./two-pointers/toolkit.md)|[✅](./two-pointers/valid-palindrome.md)|[✅](./two-pointers/two-sum-II.md)|[✅](./two-pointers/3-sum.md)|[✅](./two-pointers/container-with-most-water.md)|[✅](./two-pointers/trapping-rain-water.md)|
 
 
 # Leetcode stats
