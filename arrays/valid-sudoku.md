@@ -24,7 +24,7 @@ board=
 
 Output: true
 ```
-# Approach
+# Approach - `unordered set for all`
 - use a `unordered_set` for rows, cols, and boxed, that too separate for each row, col and box
 - iterate over the 2d array
 - find boxIndex using `(row/3) * 3 + (col/3)`

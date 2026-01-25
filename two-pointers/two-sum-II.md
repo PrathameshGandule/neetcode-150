@@ -12,7 +12,7 @@ Input: numbers = [2,7,11,15], target = 9
 Output: [1,2]
 Explanation: The sum of 2 and 7 is 9. Therefore, index1 = 1, index2 = 2. We return [1, 2].
 ```
-# Approach 1
+# Approach 1 - two pointers
 - We may use `unordered_map<int, int>` like used in original [two-sum](../arrays/two-sum.md)
 - but since here array is sorted in increasing order we may leverage the use of 2 pointers from both sides
 - we take sum of cuurent position and if current sum if more than needed we move left pointer to right so that we can get bigger num

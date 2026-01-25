@@ -16,7 +16,7 @@ There is no string in strs that can be rearranged to form "bat".
 The strings "nat" and "tan" are anagrams as they can be rearranged to form each other.
 The strings "ate", "eat", and "tea" are anagrams as they can be rearranged to form each other.
 ```
-# Approach 1
+# Approach 1 - `sorted key and unordered_map` 
 - create a `unordered_map<string, vector<string>>`
 - we iterate over the `strs` vector and sort the each string
 - then we push back the current string for that sorted key
@@ -73,7 +73,7 @@ public:
 - Here I made extra `vector<string>` which was just a copy and pushed only the indexes of similar strings in umap
 - and then again iterate over the umap in nested loop to push_back all the strs using these indexes 
 
-# Approach 2
+# Approach 2 - `ascii val key and unordered map`
 - Rather than sorting and storing anagrams for that string, we'll be constructing a key based on ascii values and push strings for that key in umap
 - We create a `unordered_map<string, vector<string>>` and `vector<int> vec(26, 0)` 
 - then we iterate over tha array of strs then increment the placeholder value for that char in curr string

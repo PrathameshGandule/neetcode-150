@@ -22,7 +22,7 @@ Machine 2:
 Codec decoder = new Codec();
 String[] strs = decoder.decode(msg);
 ``` 
-# Approach 1
+# Approach 1 - `len|sep|str` method
 - Now in this approach what we do is
 - calculate length of current string then add a separator(any) like `#` then add the string and continue this pattern
 ```bash

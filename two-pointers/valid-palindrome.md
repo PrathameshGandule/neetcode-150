@@ -11,7 +11,7 @@ Input: s = "A man, a plan, a canal: Panama"
 Output: true
 Explanation: "amanaplanacanalpanama" is a palindrome.
 ```
-# Approach 1
+# Approach 1 - `clean, reverse and compare`
 - In this approach we first clean the strings of all other non-alphanumeric chars
 - then we simply create a reverse of that string
 - then we return the comparison of them as an output
@@ -49,7 +49,8 @@ public:
 - Space complexity
   - activity = n + n
   - `O(n)` as we have to store the reverse num and clean string from the input string
-# Approach 2
+
+# Approach 2 - two pointers
 - Here we take two pointers `l=0` and `r=n-1`
 - then we iterate over the string from both sides while `l<r`
 - if current char with l or r is non-alphanumeric we skip it and go ahead
@@ -82,5 +83,7 @@ public:
 ```
 - Time complexity : O(n)
 - Space complexity : O(1)
+
 # Quick intuition/solution for the problem
 - Use of two pointers for palindrome is good, and going only halfway through the iteration
+***

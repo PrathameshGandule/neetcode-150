@@ -10,7 +10,7 @@ Input: nums = [100,4,200,1,3,2]
 Output: 4
 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
 ```
-# Approach 1
+# Approach 1 - `sort and iterate`
 - We sort the nums first
 - Then we iterate over them, as we now know that consecutive numbers will for sure be after one another
 - we keep track using `cnt` and `cntmax` as we iterate over them, 
@@ -45,7 +45,7 @@ public:
   - activity = n or 1
   - `O(n)` or `O(1)` depending or sorting algorithm used or to account for it or not
 
-# Approach 2
+# Approach 2 - `unordered set for next lookup`
 - In this approach we are going to use a `unordered_set<int>`
 - we fill the set with numbers from `nums`
 - then we iterate over the set to see if we can get `curr+1` in set if so we increment a temp cnt var

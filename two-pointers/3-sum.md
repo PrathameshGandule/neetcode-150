@@ -16,13 +16,13 @@ nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
 The distinct triplets are [-1,0,1] and [-1,-1,2].
 Notice that the order of the output and the order of the triplets does not matter.
 ```
-# Approach 1
+# Approach 1 - `triple nested loop`
 - A brute force approach here would be to iterate over the array in triple nested loop and loo for triplets that make total sum of 0
 - we have to make sure no duplicate entries go in result vector
 - and all the nums in a triplet are unique
 - This is inefficient and may give TLE
 
-# Approach 2
+# Approach 2 - `fixate and standard two sum`
 - This approach is better than brute but still mid level
 - We create a `unordered_map<int, int>` from input array for `O(1)` lookup 
 - We fixate a num and since we're finding a triplet who's sum is zero, we try to set new `target=0-nums[i]`, and now we search for a pair of this number through standard [two sum](../arrays/two-sum.md) approach with `unordered_map<int, int>`
@@ -72,7 +72,7 @@ public:
 - Space complexity
   - activity : n + n + 3
   - `O(n)` effective
-# Approach 3
+# Approach 3 - `sort and fixate & two pointers`
 - The optimal approach where we use 2 pointers
 - basic idea : We sort the input array first and then fixate a target like in [approach 2](#approach-2) then use 2 pointers over sorted array like in [two-sum-II](./two-sum-II.md) problem to find the triplet
 - since array is sorted we try to avoid repetitive values like we may encounter in array where `nums[i] == nums[i-1]` and same like we did in 2sum-2 we increment j if `curr < target` and decrement k if `curr > target`

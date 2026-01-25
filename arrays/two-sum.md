@@ -13,7 +13,7 @@ Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 ```
 
-# Approach 1
+# Approach 1 - `double nested loop`
 - Nested iteration over the array level 2
 - `i=0` and `j=i+1` to avoid repetitive and false answers
 ```cpp
@@ -36,7 +36,7 @@ public:
 - Space complexity : O(1)
 - Very inefficient, takes forever
 
-# Approach 2
+# Approach 2 - `classic unordered map for lookup`
 - create a `unordered_map<int, int>` 
 - store the `nums[i]` in `first` and index `i` in `second` of umap
 - now we store the `nums[i]` in first because that's what we are searching for, it's the key in umap, keys are searchable with `O(1)` complexity, something that I get confused with sometimes

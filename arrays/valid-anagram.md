@@ -11,7 +11,7 @@ Input: s = "anagram", t = "nagaram"
 Output: true
 ```
 
-# Approach 1
+# Approach 1 - `unordered map and inc & dec`
 - If length of `s` and `t` is not same return false
 - Create a `unordered_map<char, int>` and increment count for each found element in `s` string
 - Then decrement the count found for each element in `t` string
@@ -41,7 +41,7 @@ public:
 - Time complexity : O(n)
 - Spce complexity : O(n)
 
-# Approach 2
+# Approach 2 - `ascii vector and inc & dec`
 - If length of `s` and `t` is not same return false
 - Make vector of size 26 (assuming all lowercase ascii chars only) initialized to 0
 - Iterate over the `s` and `t` and increment and decrement respectively the count for that char in vector
@@ -68,7 +68,7 @@ class Solution {
 - Time complexity : O(n)
 - Space complexity : O(26) ~ O(1)
 
-# Approach 3
+# Approach 3 - `sort and compare`
 - If length of `s` and `t` is not same return false
 - Sort both the strings and return their comparison
 ```cpp

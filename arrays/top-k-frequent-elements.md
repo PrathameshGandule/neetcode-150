@@ -10,11 +10,11 @@ Example
 Input: nums = [1,1,1,2,2,3], k = 2
 Output: [1,2]
 ```
-# Approach 1
+# Approach 1 - `max heap (priority queue)`
 - Now first approach was to use a [max heap](https://www.geeksforgeeks.org/cpp/max-heap-in-cpp/) which is used using priority queue from STL in C++, which stores the maximum values at top, as it's a complete binary tree where always `val(parent) >= val(child)` so we always get the top element when we pop
 - But implementation for that was hard in cpp so I didn't do it : )
 
-# Approach 2
+# Approach 2 - `unordered map and index bucket sort`
 - This ones better than max heap
 - We count the occurences of each element first with a `unordered_map<int, int>`
 - Then create a `vector<vector<int>>` with size `n+1` where n is size of input array

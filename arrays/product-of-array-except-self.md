@@ -15,7 +15,7 @@ Output: [24,12,8,6]
 8 = 1 x 2 x 4
 6 = 1 x 2 x 3
 ```
-# Approach 1
+# Approach 1 - `product of all and divide`
 - First approach would be to just calculate product of all numbers in array
 - then iterate over the input array and putting value for current index as whole product divided by current num
 - just we have to watch out for 2 edge cases
@@ -55,7 +55,7 @@ public:
 - Space complexity : O(1)
 - It uses division, there exists a solution without using division
 
-# Approach 2
+# Approach 2 - `prefix product method`
 - Here we use a prefix sum method
 - We create 2 array prefix and postfix
 - we store the product of previous elements for that num in prefix and vice versa for postfix

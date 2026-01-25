@@ -15,7 +15,7 @@ The element 1 occurs at the indices 0 and 3.
 ```
 - Difficulty : EASY
 
-# Brute force approach
+# Brute force approach - `double nested loop`
 - Iterate twice over the array with i and j, where
 - `i=0` and `j=i+1` for iteration to avoid false comparison with self and previous double comparsion
 ```cpp
@@ -37,7 +37,7 @@ public:
 - Takes too much time, TLE for larger inputs
 
 
-# Optimal approach
+# Optimal approach - `unordered set`
 - Use a `unordered_set`
 - Iterate over the array and see if current element can be found in the set, if found return `true`
 - If not found add current element to the set
@@ -60,4 +60,5 @@ public:
   - single possible iteration over the array
 - Space Complexity = O(n)
   - Max capacity of `n` size acquired for `false` output
-- Better and faster than brute force 
+- Better and faster than brute force
+***
