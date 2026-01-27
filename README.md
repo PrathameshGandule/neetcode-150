@@ -11,15 +11,17 @@ My notes for neetcode 150 dsa sheet
 |23-01-2026|5|1|8|
 |24-01-2026|6|4|12|
 |25-01-2026|7|2|14|
+|26-01-2026|8|1|15|
+|27-01-2026|9|1|16|
 
 ### Activity graph
 ```mermaid
 xychart-beta
     title "Progress"
-    x-axis [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    y-axis "No. of problems solved" 1 --> 20
-	bar [3, 6, 7, 7, 8, 12, 14]
-    line [3, 6, 7, 7, 8, 12, 14]
+    x-axis [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 16, 17, 18, 19, 20]
+    y-axis "No. of problems solved" 1 --> 25
+	bar [3, 6, 7, 7, 8, 12, 14, 15, 16]
+    line [3, 6, 7, 7, 8, 12, 14, 15, 16]
 ```
 
 
@@ -35,6 +37,10 @@ xychart-beta
 |Section|1|2|3|4|5|
 |-|-|-|-|-|-|
 |[Two Pointers](./two-pointers/toolkit.md)|[✅](./two-pointers/valid-palindrome.md)|[✅](./two-pointers/two-sum-II.md)|[✅](./two-pointers/3-sum.md)|[✅](./two-pointers/container-with-most-water.md)|[✅](./two-pointers/trapping-rain-water.md)|
+
+|Section|1|2|3|4|5|6|
+|-|-|-|-|-|-|-|
+|Sliding Window|[✅](./sliding-window/best-time-to-buy-and-sell-stocks.md)|[✅](./sliding-window/longest-substring-without-repeating-characters.md)|_|_|_|_|
 
 
 # Leetcode stats
